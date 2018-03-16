@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Straż pożarna</title>
+	<link rel="stylesheet" href="css/style.css">
+	<!--	google fonts styles-->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900|Droid+Serif:400,400i,700,700i|Roboto:100i,300,300i,400,400i,500,500i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+</head>
+<body>
+<div>
+	<header id="main-header"> 
+		<div class="main-header-content">
+			<h1> Straż <span style="color:#990000"> Pożarna </span> </h1>
+			<h2> <a href="#data"> Wprowadź dane w formacie JSON. </a> </h2>
+		</div>		
+	</header>
+
+	<!--section input data start-->
+	<h1>Dane</h1>
+    <h2><p>Wprowadź dane w formacie JSON oraz naciśnij przycisk rysuj tabelkę.</p></h2>
+    <textarea rows="10" cols="100" id="data"></textarea>
+    <button id="button">Rysuj tabelkę!</button>
+    <div id="content"></div>
+<div>
+
+	<!--footer  start-->
+ 	<div id = "footer" >
+	 	<div class="photo1"></div>
+	 	<div class="container">
+	        	<h2><span style="color:red"> !!!! </span> Legenda <span style="color:red"> !!!! </span> </h2>
+		        <ul>
+		            <li><span style="color:red">Droga między miastami, której pokonanie przekroczyło dopuszczalny limit czasu</span></li>
+		            <li><span style="color:green">Miasta, które posiadają własną jednostkę</span></li>
+		        </ul>
+        </div>
+        <div class="photo2"></div>
+    </div>
+</div>
+<script src="js/prototype.min.js"></script>
+<script src="js/map.js"></script>
+
+<script>
+    new Map('data', 'button', 'content');
+</script>
+</body>
+</html>

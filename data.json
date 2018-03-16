@@ -1,0 +1,43 @@
+{
+	"miasta" : [
+		{
+			"nazwa" : "A",
+			"ma_jednostke" : true
+		},
+		{
+			"nazwa" : "B",
+			"ma_jednostke" : true
+		},
+		{
+			"nazwa" : "C",
+			"ma_jednostke" : false
+		},
+		{
+			"nazwa" : "D",
+			"ma_jednostke" : false
+		},
+		{
+			"nazwa" : "E",
+			"ma_jednostke" : true
+		}
+	],
+	"drogi" : [
+		{
+			"miasta" : ["A", "B"],
+			"czas_przejazdu" : 2
+		},
+		{
+			"miasta" : ["A", "C"],
+			"czas_przejazdu" : 3
+		},
+		{
+			"miasta" : ["A", "D"],
+			"czas_przejazdu" : 4
+		},
+		{
+			"miasta" : ["A", "E"],
+			"czas_przejazdu" : 1
+		}
+	],
+	"max_czas_przejazdu" : 10
+}
